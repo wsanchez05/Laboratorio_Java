@@ -14,5 +14,6 @@ public class Text4 {
         valor = numero.nextFloat();
 
         precio.precioProducto(valor);
+        numero.close();
     }
 }

@@ -14,6 +14,7 @@ public class Test3 {
         radio = numero.nextInt();
         areacirculo. area_circulo(radio);
 
+        numero.close();
 
     }
 }

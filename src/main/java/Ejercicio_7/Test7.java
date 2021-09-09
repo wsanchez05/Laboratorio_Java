@@ -16,6 +16,8 @@ public class Test7 {
 
         }while (numero < 0);
         comparacero.comparar_numero(numero);
+
+        dato.close();
     }
 
 

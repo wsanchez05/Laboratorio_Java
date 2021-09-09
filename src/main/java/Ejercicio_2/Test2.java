@@ -20,6 +20,6 @@ public class Test2 extends Comparador {
         numero_2 = numero.nextInt();
 
         comparar_numero(numero_1,numero_2);
-
+        numero.close();
     }
 }
