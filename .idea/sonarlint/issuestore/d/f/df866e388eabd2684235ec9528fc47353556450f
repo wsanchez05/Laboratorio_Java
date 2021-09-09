@@ -1,0 +1,19 @@
+
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(óÄ¬âûÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(àö¡ˆ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(àö¡ˆ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(àö¡ˆ
+N	java:S106""9Replace this use of System.out or System.err by a logger.(àö¡ˆ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(àö¡ˆ
+N	java:S106("9Replace this use of System.out or System.err by a logger.(Òÿ¿å
+N	java:S106+"9Replace this use of System.out or System.err by a logger.(Òÿ¿å
+U	java:S106."9Replace this use of System.out or System.err by a logger.( ï¿8¸ëÄÇ¼/
+J
+java:S1656	"/Remove or correct this useless self-assignment.(êÅ¡şÿÿÿÿ
+^
+java:S1192"HDefine a constant instead of duplicating this literal "El dia " 7 times.(àö¡ˆ
+i
+java:S1192"LDefine a constant instead of duplicating this literal " es laboral" 5 times.(àö¡ˆ8ó†ëÇ¼/
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ëµúşÿÿÿÿ
+|
+java:S4165	"aRemove this useless assignment; "dia" already holds the assigned value along all execution paths.(êÅ¡şÿÿÿÿ

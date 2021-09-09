@@ -25,8 +25,8 @@ public class Reemplazar {
         this.fraseIngresada = fraseIngresada;
     }
 
-    public void reemplazarLetraA(){
-
+    public void reemplazarLetraA()
+    {
         System.out.println(this.frase.replace("a","e")+" "+this.fraseIngresada);
     }
 }
