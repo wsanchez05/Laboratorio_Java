@@ -17,7 +17,7 @@ public class Test12 {
         frase_2 = frase.nextLine();
         CompararFrases entrada = new CompararFrases(frase_1,frase_2);
         entrada.comparaFrases();
-
+        frase.close();
 
     }
 }

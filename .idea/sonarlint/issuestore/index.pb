@@ -15,8 +15,6 @@ T
 $src/main/java/Ejercicio_6/Test6.java,3\0\306ce082acef9d229cdd465a026a8abe7939a308
 T
 $src/main/java/Ejercicio_5/Test5.java,a\b\abb8b481d94225d439eb9817e476b3625b6ed052
-[
-+src/main/java/Ejercicio_5/ParesImpares.java,3\7\376087fff9dedd0c9bab5a1fbf38f127c0cdacfb
 T
 $src/main/java/Ejercicio_7/Test7.java,4\2\42614357321cf794a8ea339cf7f7f427c60373d6
 T

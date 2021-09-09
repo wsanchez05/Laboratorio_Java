@@ -93,10 +93,9 @@ public class CompararFrases {
                     diferencia_2 = diferencia_2 + this.frase_2.charAt(i);
                 };
             }
-            System.out.println("diferencia de frase 1: " +diferencia_1);
-            System.out.println("diferencia de frase 2: " +diferencia_2);
         }
-
+        System.out.println("diferencia de frase 1: " +diferencia_1);
+        System.out.println("diferencia de frase 2: " +diferencia_2);
 
     }
 }
