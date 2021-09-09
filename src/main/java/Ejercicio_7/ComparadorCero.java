@@ -20,9 +20,9 @@ public class ComparadorCero {
 
     public  void comparar_numero(double numero) {
 
-        if (numero >0)
+        if (numero >=0)
         {
-            System.out.println("El numero " + numero +" es mayor a 0");
+            System.out.println("El numero " + numero +" es mayor o igual a 0");
         }
 
 

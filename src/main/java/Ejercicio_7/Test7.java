@@ -14,7 +14,7 @@ public class Test7 {
             numero = Double.parseDouble(dato.nextLine());
 
 
-        }while (numero <= 0);
+        }while (numero < 0);
         comparacero.comparar_numero(numero);
     }
 
