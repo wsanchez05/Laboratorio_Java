@@ -6,6 +6,7 @@ import Ejercicio_13.MostrarFecha;
 import Ejercicio_14.ImprimirNumeros;
 import Ejercicio_15.MostrarMenu;
 import Ejercicio_16.Personas;
+import Ejercicio_17.EjecutaElectrodomestico;
 import Ejercicio_3.AreaCirculo;
 import Ejercicio_4.PrecioProducto;
 import Ejercicio_5.ParesImpares;
@@ -186,6 +187,12 @@ public class main {
 
             case 16:
                 InfoPerson();
+                break;
+
+            case 17:
+                EjecutaElectrodomestico electro = new EjecutaElectrodomestico();
+                electro.ArregloElectrodomestico();
+                electro.PrecioElectrodomesticos();
                 break;
         }
     }
