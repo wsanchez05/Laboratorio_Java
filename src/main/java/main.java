@@ -23,178 +23,189 @@ public class main {
     {
         Scanner Entrada_1 = new Scanner(System.in);
         //Comparador compara_1 = new Comparador();
-        System.out.println("Ingresa el ejercicio que desea mirar (del 1 al 18)");
-        int opcion = Entrada_1.nextInt();
+        int opcion;
 
-        switch (opcion)
-        {
-            case 1:
-                Comparador compara = new Comparador();
-                compara.comparar_numero(5,4);
-                break;
-            case 2:
-                Scanner numero = new Scanner(System.in);
-                Comparador comparar_2 = new Comparador();
-                int numero_1;
-                int numero_2;
+            System.out.println("Ingresa el ejercicio que desea mirar (del 1 al 18)");
+            System.out.println("Precio 0 para salir");
+            opcion = Entrada_1.nextInt();
 
-                System.out.println("Ingrese el primer numero ");
-                numero_1 = numero.nextInt();
-                System.out.println("Ingrese el segundo numero ");
-                numero_2 = numero.nextInt();
-
-                comparar_2.comparar_numero(numero_1,numero_2);
-                numero.close();
-
-                break;
-            case 3:
-                double radio;
-                double area;
-                Scanner radios = new Scanner(System.in);
-                AreaCirculo areacirculo  = new AreaCirculo();
-                System.out.println("Ingrese el radio del Circulo");
-                radio = radios.nextInt();
-                areacirculo. area_circulo(radio);
-
-                radios.close();
-
-                break;
-            case 4:
-                Scanner numeroPrecio = new Scanner(System.in);
-                PrecioProducto precio = new PrecioProducto();
-                float valor =0;
-
-                System.out.println("Por favor digite el precio del producto sin iva");
-                valor = numeroPrecio.nextFloat();
-
-                precio.precioProducto(valor);
-                numeroPrecio.close();
-
-                break;
-            case 5:
-                ParesImpares numeroParesImpares = new ParesImpares();
-                numeroParesImpares.parimpar();
-                break;
-
-            case 6:
-                Par_ImparFor numeroimparFor = new Par_ImparFor();
-                numeroimparFor.parimpar();
-                break;
-            case 7:
-                double numeroComparadorcero;
-                ComparadorCero comparacero = new ComparadorCero();
-                Scanner dato = new Scanner(System.in);
-                do {
-                    System.out.println("Ingrese un nunero mayor a cero");
-                    numeroComparadorcero = Double.parseDouble(dato.nextLine());
-
-
-                }while (numeroComparadorcero < 0);
-                comparacero.comparar_numero(numeroComparadorcero);
-
-                dato.close();
-
-                break;
-            case 8:
-                Scanner datoDia = new Scanner(System.in);
-                DiaLaboral dialaboral = new DiaLaboral();
-                String dia = "";
-                System.out.println("Ingrese por favor un dia de la semana");
-                dia = datoDia.nextLine();
-                dialaboral.CompararDia(dia);
-                System.out.println(dia);
-
-                datoDia.close();
-                break;
-            case 9:
-                String fraseConcatena;
-                Scanner palabra = new Scanner(System.in);
-
-                System.out.println("ingrese frase a concatenar");
-                fraseConcatena = palabra.nextLine();
-                Reemplazar remplazo = new Reemplazar(fraseConcatena);
-                remplazo.reemplazarLetraA();
-
-                palabra.close();
-                break;
-            case 10:
-                String frase;
-                Scanner palabraFrase = new Scanner(System.in);
-
-                System.out.println("ingrese frase");
-                frase = palabraFrase.nextLine();
-                BorrarEspacios remplazoEspacio = new BorrarEspacios(frase);
-                System.out.println("La frase ingresada sin los espacios es: ");
-                remplazoEspacio.borrarEspacio();
-
-                palabraFrase.close();
-
-                break;
-
-            case 11:
-                String fraseComparar;
-                Scanner palabraComparaFrase = new Scanner(System.in);
-
-                System.out.println("ingrese frase");
-                fraseComparar = palabraComparaFrase.nextLine();
-                IndicarLongitud cantidad = new IndicarLongitud(fraseComparar);
-                System.out.println("La longitud de la frase ingresada es: " + cantidad.indicarLongitud());
-                System.out.println("La cantidad de vocales es: " + cantidad.contarVocales());
-
-                palabraComparaFrase.close();
-                palabraComparaFrase.close();
-
-                break;
-            case 12:
-
-                Scanner fraseCompara = new Scanner(System.in);
-                String frase_1 = "";
-                String frase_2 = "";
-
-
-                System.out.println("ingrese frase 1");
-                frase_1 = fraseCompara.nextLine();
-                System.out.println("ingrese frase 2");
-                frase_2 = fraseCompara.nextLine();
-                CompararFrases entrada = new CompararFrases(frase_1,frase_2);
-                entrada.comparaFrases();
-                fraseCompara.close();
-                break;
-
-            case 13:
-
-                MostrarFecha fecha = new MostrarFecha();
-                System.out.println("La fecha de hoy (yyyy/MM/dd hh:mm) es: ");
-                fecha.fecha();
-
-                break;
-
-            case 14:
-
-                int numeroimprimir = 0;
-                Scanner datoImprimir = new Scanner(System.in);
-                System.out.println("Ingrese un numero");
-                numeroimprimir = datoImprimir.nextInt();
-                ImprimirNumeros imprimirnumero = new ImprimirNumeros(numeroimprimir);
-                imprimirnumero.imprimir();
-                datoImprimir.close();
+            switch (opcion)
+            {
+                case 1:
+                    Comparador compara = new Comparador();
+                    compara.comparar_numero(5, 4);
                     break;
-            case 15:
-                MostrarMenu opcionMenu = new MostrarMenu();
-                opcionMenu.opcionesmenu();
+                case 2:
+                    Scanner numero = new Scanner(System.in);
+                    Comparador comparar_2 = new Comparador();
+                    int numero_1;
+                    int numero_2;
 
-                break;
+                    System.out.println("Ingrese el primer numero ");
+                    numero_1 = numero.nextInt();
+                    System.out.println("Ingrese el segundo numero ");
+                    numero_2 = numero.nextInt();
 
-            case 16:
-                InfoPerson();
-                break;
+                    comparar_2.comparar_numero(numero_1, numero_2);
+                    numero.close();
 
-            case 17:
-                EjecutaElectrodomestico electro = new EjecutaElectrodomestico();
-                electro.ArregloElectrodomestico();
-                electro.PrecioElectrodomesticos();
-                break;
-        }
+                    break;
+                case 3:
+                    double radio;
+                    double area;
+                    Scanner radios = new Scanner(System.in);
+                    AreaCirculo areacirculo = new AreaCirculo();
+                    System.out.println("Ingrese el radio del Circulo");
+                    radio = radios.nextInt();
+                    areacirculo.area_circulo(radio);
+
+                    radios.close();
+
+                    break;
+                case 4:
+                    Scanner numeroPrecio = new Scanner(System.in);
+                    PrecioProducto precio = new PrecioProducto();
+                    float valor = 0;
+
+                    System.out.println("Por favor digite el precio del producto sin iva");
+                    valor = numeroPrecio.nextFloat();
+
+                    precio.precioProducto(valor);
+                    numeroPrecio.close();
+
+                    break;
+                case 5:
+                    ParesImpares numeroParesImpares = new ParesImpares();
+                    numeroParesImpares.parimpar();
+                    break;
+
+                case 6:
+                    Par_ImparFor numeroimparFor = new Par_ImparFor();
+                    numeroimparFor.parimpar();
+                    break;
+                case 7:
+                    double numeroComparadorcero;
+                    ComparadorCero comparacero = new ComparadorCero();
+                    Scanner dato = new Scanner(System.in);
+                    do {
+                        System.out.println("Ingrese un nunero mayor a cero");
+                        numeroComparadorcero = Double.parseDouble(dato.nextLine());
+
+
+                    } while (numeroComparadorcero < 0);
+                    comparacero.comparar_numero(numeroComparadorcero);
+
+                    dato.close();
+
+                    break;
+                case 8:
+                    Scanner datoDia = new Scanner(System.in);
+                    DiaLaboral dialaboral = new DiaLaboral();
+                    String dia = "";
+                    System.out.println("Ingrese por favor un dia de la semana");
+                    dia = datoDia.nextLine();
+                    dialaboral.CompararDia(dia);
+                    System.out.println(dia);
+
+                    datoDia.close();
+                    break;
+                case 9:
+                    String fraseConcatena;
+                    Scanner palabra = new Scanner(System.in);
+
+                    System.out.println("ingrese frase a concatenar");
+                    fraseConcatena = palabra.nextLine();
+                    Reemplazar remplazo = new Reemplazar(fraseConcatena);
+                    remplazo.reemplazarLetraA();
+
+                    palabra.close();
+                    break;
+                case 10:
+                    String frase;
+                    Scanner palabraFrase = new Scanner(System.in);
+
+                    System.out.println("ingrese frase");
+                    frase = palabraFrase.nextLine();
+                    BorrarEspacios remplazoEspacio = new BorrarEspacios(frase);
+                    System.out.println("La frase ingresada sin los espacios es: ");
+                    remplazoEspacio.borrarEspacio();
+
+                    palabraFrase.close();
+
+                    break;
+
+                case 11:
+                    String fraseComparar;
+                    Scanner palabraComparaFrase = new Scanner(System.in);
+
+                    System.out.println("ingrese frase");
+                    fraseComparar = palabraComparaFrase.nextLine();
+                    IndicarLongitud cantidad = new IndicarLongitud(fraseComparar);
+                    System.out.println("La longitud de la frase ingresada es: " + cantidad.indicarLongitud());
+                    System.out.println("La cantidad de vocales es: " + cantidad.contarVocales());
+
+                    palabraComparaFrase.close();
+                    palabraComparaFrase.close();
+
+                    break;
+                case 12:
+
+                    Scanner fraseCompara = new Scanner(System.in);
+                    String frase_1 = "";
+                    String frase_2 = "";
+
+
+                    System.out.println("ingrese frase 1");
+                    frase_1 = fraseCompara.nextLine();
+                    System.out.println("ingrese frase 2");
+                    frase_2 = fraseCompara.nextLine();
+                    CompararFrases entrada = new CompararFrases(frase_1, frase_2);
+                    entrada.comparaFrases();
+                    fraseCompara.close();
+                    break;
+
+                case 13:
+
+                    MostrarFecha fecha = new MostrarFecha();
+                    System.out.println("La fecha de hoy (yyyy/MM/dd hh:mm) es: ");
+                    fecha.fecha();
+
+                    break;
+
+                case 14:
+
+                    int numeroimprimir = 0;
+                    Scanner datoImprimir = new Scanner(System.in);
+                    System.out.println("Ingrese un numero");
+                    numeroimprimir = datoImprimir.nextInt();
+                    ImprimirNumeros imprimirnumero = new ImprimirNumeros(numeroimprimir);
+                    imprimirnumero.imprimir();
+                    datoImprimir.close();
+                    break;
+                case 15:
+                    MostrarMenu opcionMenu = new MostrarMenu();
+                    opcionMenu.opcionesmenu();
+
+                    break;
+
+                case 16:
+                    InfoPerson();
+                    break;
+
+                case 17:
+                    EjecutaElectrodomestico electro = new EjecutaElectrodomestico();
+                    electro.ArregloElectrodomestico();
+                    electro.PrecioElectrodomesticos();
+                    break;
+
+                case 18:
+                    System.out.println("Ejecutar desde la carpeta");
+                    break;
+
+                default:
+                    System.out.println("Opcion Invalida");
+            }
+
     }
 
     public static void InfoPerson()
